@@ -94,6 +94,13 @@ nav {
   z-index: 6;
 }
 
+.nav_links li a:hover {
+  text-decoration: none;
+  color: #d19358;
+  z-index: 6;
+  transition-duration: 0.2s;
+}
+
 ul,
 li:hover {
   top: 8px;
@@ -462,23 +469,24 @@ h3 {
 }
 
 .news_section {
-  height: 62vh;
+  height: auto;
   width: 100vw;
   background: linear-gradient(90deg, #383838 0%, #a3a3a3 100%);
   display: flex;
   flex-direction: row;
+  padding: 30px;
 }
 
 .news_container {
   display: flex;
   flex-direction: row;
-  height: 600px;
+  justify-content: center;
+  height: auto;
   align-content: center;
 }
 
 .news_thumbnail_1 {
-  max-height: auto;
-  max-width: 30%;
+  max-height: 300px;
   padding: 20px;
 }
 
@@ -658,6 +666,195 @@ footer {
   height: 100vh;
 }
 
+.handshake {
+  height: auto;
+  width: 60px;
+  margin-left: 48%;
+  padding-bottom: 1.5rem;
+}
+
+.content_contianer {
+}
+
+.contact-greeting {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 13%;
+  padding: 2%;
+  background-color: #383838;
+  margin-right: 10%;
+  margin-left: 10%;
+  z-index: 2;
+  opacity: 95%;
+}
+
+.contact-greeting h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  padding-right: 10%;
+  padding-left: 10%;
+  color: white;
+}
+
+.contact-greeting h3 {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-weight: 400;
+}
+
+.contact-greeting button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_button {
+  max-width: 13rem;
+  padding: 1rem;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.contact_button:hover {
+  color: white;
+  background-color: #323232;
+}
+.floater {
+  position: absolute;
+}
+.float_2 {
+  margin-top: 5%;
+}
+.float_3 {
+  margin-top: 30%;
+}
+.float_4 {
+  margin-top: 15%;
+}
+.float_5 {
+  margin-top: 40%;
+}
+.float_6 {
+  margin-top: 25%;
+}
+.float_7 {
+  margin-top: 10%;
+}
+.float_8 {
+  margin-top: 35%;
+}
+.float_9 {
+  margin-top: 22%;
+}
+.float_10 {
+  margin-top: 17%;
+}
+.float_11 {
+  margin-top: 37%;
+}
+
+.background_logo_2 {
+  position: absolute;
+  margin-top: 5%;
+  animation: slide-right 40s infinite;
+  animation-timing-function: linear;
+  height: 200px;
+}
+.background_logo_3 {
+  position: absolute;
+  margin-top: 15%;
+  animation: slide-right 60s infinite;
+  animation-timing-function: linear;
+  height: 100px;
+}
+.background_logo_4 {
+  position: absolute;
+  margin-top: 25%;
+  animation: slide-right 80s infinite;
+  animation-timing-function: linear;
+  height: 80px;
+}
+
+.background_logo_5 {
+  position: absolute;
+  margin-top: 35%;
+  animation: slide-right 100s infinite;
+  animation-timing-function: linear;
+  height: 150px;
+}
+.background_logo_6 {
+  position: absolute;
+  margin-top: 40%;
+  animation: slide-right 100s infinite;
+  animation-timing-function: linear;
+  height: 120px;
+}
+
+.background_logo_7 {
+  position: absolute;
+  margin-top: 40%;
+  animation: slide-left 40s infinite;
+  animation-timing-function: linear;
+  height: 100px;
+}
+.background_logo_8 {
+  position: absolute;
+  margin-top: 40%;
+  animation: slide-left 60s infinite;
+  animation-timing-function: linear;
+  height: 80px;
+}
+.background_logo_9 {
+  position: absolute;
+  margin-top: 40%;
+  animation: slide-left 80s infinite;
+  animation-timing-function: linear;
+  height: 70px;
+}
+.background_logo_10 {
+  position: absolute;
+  margin-top: 40%;
+  animation: slide-left 100s infinite;
+  animation-timing-function: linear;
+  height: 200px;
+}
+.background_logo_11 {
+  position: absolute;
+  margin-top: 40%;
+  animation: slide-left 100s infinite;
+  animation-timing-function: linear;
+  height: 130px;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -200px;
+  }
+  to {
+    margin-left: 110vw;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 110vw;
+  }
+  to {
+    margin-left: -200px;
+  }
+}
+
 /* .content_container {
   overflow: auto;
   padding-bottom: 300px;
@@ -695,10 +892,10 @@ footer {
 }
 
 @keyframes slide_to_right {
-  from {
+  0% {
     transform: translateX(120%);
   }
-  to {
+  100% {
     transform: translateX(-20%);
   }
 }
@@ -1006,6 +1203,12 @@ footer {
 
   .news_section {
     padding: 0rem;
+    margin-top: 70%;
+    width: 100vw;
+  }
+  .news_section img {
+    height: 300px;
+    width: auto;
   }
 
   .news_thumbnail_1 {
@@ -1050,6 +1253,18 @@ footer {
 
   footer {
     visibility: hidden;
+  }
+
+  .handshake {
+    height: auto;
+    width: 60px;
+    margin-left: 40%;
+    padding-bottom: 1.5rem;
+    margin-top: 10%;
+  }
+  .contact-greeting {
+    margin-top: 50%;
+    padding-bottom: 2rem;
   }
 }
 
